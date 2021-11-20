@@ -10,7 +10,7 @@ all: $(EXECUTABLES)
 clean:
 	-rm *.o  $(EXECUTABLES)
 
-run-tests: test_reversed.o GOOD-reversed.o
+run-tests: test_reversed.o Good-reversed.o
 	$(OXX) -o $@ $^
 
 %.o : %.cc
